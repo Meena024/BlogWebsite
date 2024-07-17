@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: antiquewhite;
+  font-size: larger;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  border-color: orange;
+}
+
+.blogs {
+  margin-top: 20px;
+}
+
+.blog {
+  border: 1px solid orange;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+}
+
+.blog img {
+  max-width: 100%;
+  height: auto;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
