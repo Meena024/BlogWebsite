@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import Modal from "./UI/Modal";
 import BlogContext from "../Contexts/BlogContext";
+import './ModalManager.css'
 
 const ModalManager = ({
   imageUrl,
@@ -29,7 +30,7 @@ const ModalManager = ({
       {modalIsOpen && (
         <Modal onClose={closeModal}>
           <h2>{isEditing ? "Edit Blog" : "Add New Blog"}</h2>
-          <form>
+          <form className="form">
             <div>
               <label>Image URL:</label>
               <input
@@ -57,7 +58,7 @@ const ModalManager = ({
               type="button"
               onClick={isEditing ? handleUpdate : handlePost}
             >
-              {isEditing ? "Update Blog" : "Post"}
+              {isEditing ? "Update" : "Post"}
             </button>
             <button type="button" onClick={closeModal}>
               Close

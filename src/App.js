@@ -76,7 +76,7 @@ function App() {
               setDescription("");
               setIsEditing(false);
               setEditIndex(null);
-              setModalIsOpen(false); 
+              setModalIsOpen(false);
             }
           )
         }
@@ -88,10 +88,10 @@ function App() {
             <img src={blog.imageUrl} alt={blog.title} />
             <p>{blog.description}</p>
             <button onClick={() => handleOpenEditModal(index)}>
-              Edit Blog
+              Edit
             </button>
             <button onClick={() => handleDelete(blogs, setBlogs, index)}>
-              Delete Blog
+              Delete
             </button>
           </div>
         ))}
